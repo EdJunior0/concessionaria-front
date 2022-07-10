@@ -1,6 +1,6 @@
 import apiFactory from "./api";
 
-const apiUrl = "https://concessionaria-api.herokuapp.com/";
+const apiUrl = process.env.NEXT_PUBLIC_URL_API;
 
 const api = apiFactory({
   api_url: apiUrl,
